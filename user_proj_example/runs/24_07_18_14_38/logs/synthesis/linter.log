@@ -1,0 +1,126 @@
+%Warning-EOFNEWLINE: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/defines.v:66:28: Missing newline at end of file (POSIX 3.206).
+                                                                                                                             : ... Suggest add newline.
+   66 | `endif // __GLOBAL_DEFINE_H
+      |                            ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.009
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:390:22: Missing newline at end of file (POSIX 3.206).
+                                                                                                                                        : ... Suggest add newline.
+  390 | `default_nettype wire
+      |                      ^
+%Warning-EOFNEWLINE: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/maxFinder.v:39:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                               : ... Suggest add newline.
+   39 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/relu.v:21:10: Missing newline at end of file (POSIX 3.206).
+                                                                                                                          : ... Suggest add newline.
+   21 | endmodule
+      |          ^
+%Warning-WIDTHEXPAND: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:258:14: Operator EQ expects 56 bits on the LHS, but LHS's VARREF 'actType' generates 32 bits.
+                                                                                                                              : ... In instance user_proj_example.l1.n_0
+  258 |   if(actType == "sigmoid")
+      |              ^~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:215:21: Operator ASSIGNDLY expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'BiasAdd' generates 33 bits.
+                                                                                                                             : ... In instance user_proj_example.l4.n_9
+  215 |                 sum <= BiasAdd; 
+      |                     ^~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:230:21: Operator ASSIGNDLY expects 32 bits on the Assign RHS, but Assign RHS's VARREF 'comboAdd' generates 33 bits.
+                                                                                                                             : ... In instance user_proj_example.l4.n_9
+  230 |                 sum <= comboAdd; 
+      |                     ^~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:252:10: Input port connection 'radd' expects 4 bits on the pin connection, but pin connection's VARREF 'r_addr' generates 5 bits.
+                                                                                                                             : ... In instance user_proj_example.l4.n_9
+  252 |         .radd(r_addr),
+      |          ^~~~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:252:10: Input port connection 'radd' expects 5 bits on the pin connection, but pin connection's VARREF 'r_addr' generates 6 bits.
+                                                                                                                             : ... In instance user_proj_example.l3.n_9
+  252 |         .radd(r_addr),
+      |          ^~~~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:252:10: Input port connection 'radd' expects 10 bits on the pin connection, but pin connection's VARREF 'r_addr' generates 11 bits.
+                                                                                                                             : ... In instance user_proj_example.l1.n_29
+  252 |         .radd(r_addr),
+      |          ^~~~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/maxFinder.v:34:20: Operator ASSIGNDLY expects 16 bits on the Assign RHS, but Assign RHS's VARREF 'counter' generates 32 bits.
+                                                                                                                               : ... In instance user_proj_example.mFind
+   34 |             o_data <= counter;
+      |                    ^~
+%Warning-WIDTHTRUNC: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:360:10: Input port connection 'i_valid' expects 1 bits on the pin connection, but pin connection's VARREF 'o4_valid' generates 10 bits.
+                                                                                                                                        : ... In instance user_proj_example
+  360 |         .i_valid(o4_valid),
+      |          ^~~~~~~
+%Warning-WIDTHEXPAND: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:370:9: Operator CASE expects 32 bits on the Case expression, but Case expression's VARREF 'out' generates 16 bits.
+                                                                                                                                        : ... In instance user_proj_example
+  370 |         case(out)
+      |         ^~~~
+%Warning-UNUSEDPARAM: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:26:23: Parameter is not used: 'C_S_AXI_ADDR_WIDTH'
+                                                                                                                                        : ... In instance user_proj_example
+   26 |     parameter integer C_S_AXI_ADDR_WIDTH    = 5
+      |                       ^~~~~~~~~~~~~~~~~~
+%Warning-UNDRIVEN: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:56:6: Signal is not driven: 'axi_rd_en'
+                                                                                                                                    : ... In instance user_proj_example
+   56 | wire axi_rd_en;
+      |      ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:57:13: Signal is not used: 'axi_rd_data'
+                                                                                                                                         : ... In instance user_proj_example
+   57 | wire [15:0] axi_rd_data;
+      |             ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:66:30: Signal is not driven, nor used: 'outputReg'
+                                                                                                                                         : ... In instance user_proj_example
+   66 | reg [C_S_AXI_DATA_WIDTH-1:0] outputReg;
+      |                              ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:85:15: Bits of signal are not used: 'o1_valid'[29:1]
+                                                                                                                                         : ... In instance user_proj_example
+   85 | wire [30-1:0] o1_valid;
+      |               ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:162:15: Bits of signal are not used: 'o2_valid'[29:1]
+                                                                                                                                          : ... In instance user_proj_example
+  162 | wire [30-1:0] o2_valid;
+      |               ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:222:15: Bits of signal are not used: 'o3_valid'[9:1]
+                                                                                                                                          : ... In instance user_proj_example
+  222 | wire [10-1:0] o3_valid;
+      |               ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:282:15: Bits of signal are not used: 'o4_valid'[9:1]
+                                                                                                                                          : ... In instance user_proj_example
+  282 | wire [10-1:0] o4_valid;
+      |               ^~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:285:14: Signal is not used: 'out_data_4'
+                                                                                                                                          : ... In instance user_proj_example
+  285 | reg [16-1:0] out_data_4;
+      |              ^~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/user_proj_example.v:286:5: Signal is not used: 'data_out_valid_4'
+                                                                                                                                         : ... In instance user_proj_example
+  286 | reg data_out_valid_4;
+      |     ^~~~~~~~~~~~~~~~
+%Warning-UNUSEDPARAM: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:24:75: Parameter is not used: 'sigmoidSize'
+                                                                                                                             : ... In instance user_proj_example.l1.n_0
+   24 | module neuron #(parameter layerNo=0,neuronNo=0,numWeight=784,dataWidth=16,sigmoidSize=5,weightIntWidth=1,actType="relu",biasNUM=0,weightNUM=0)(
+      |                                                                           ^~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:30:25: Signal is not used: 'biasValid'
+                                                                                                                              : ... In instance user_proj_example.l1.n_0
+   30 |     input    wire       biasValid,
+      |                         ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/neuron.v:32:26: Signal is not used: 'biasValue'
+                                                                                                                              : ... In instance user_proj_example.l1.n_0
+   32 |     input wire [15:0]    biasValue,
+      |                          ^~~~~~~~~
+%Warning-UNUSEDPARAM: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/Weight_Memory.v:23:49: Parameter is not used: 'neuronNo'
+                                                                                                                                    : ... In instance user_proj_example.l1.n_0.WM
+   23 | module Weight_Memory #(parameter numWeight = 3, neuronNo=5,layerNo=1,addressWidth=10,dataWidth=16,weightNUM=0) 
+      |                                                 ^~~~~~~~
+%Warning-UNUSEDPARAM: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/Weight_Memory.v:23:60: Parameter is not used: 'layerNo'
+                                                                                                                                    : ... In instance user_proj_example.l1.n_0.WM
+   23 | module Weight_Memory #(parameter numWeight = 3, neuronNo=5,layerNo=1,addressWidth=10,dataWidth=16,weightNUM=0) 
+      |                                                            ^~~~~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/Weight_Memory.v:26:16: Signal is not used: 'wen'
+                                                                                                                                     : ... In instance user_proj_example.l1.n_0.WM
+   26 |     input wire wen,
+      |                ^~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/Weight_Memory.v:28:35: Signal is not used: 'wadd'
+                                                                                                                                     : ... In instance user_proj_example.l1.n_0.WM
+   28 |     input wire [addressWidth-1:0] wadd,
+      |                                   ^~~~
+%Warning-UNUSEDSIGNAL: /home/engtech/Desktop/Openlane_v2/HW_For_AI/openlane/user_proj_example/../../verilog/rtl/Weight_Memory.v:30:32: Signal is not used: 'win'
+                                                                                                                                     : ... In instance user_proj_example.l1.n_0.WM
+   30 |     input wire [dataWidth-1:0] win,
+      |                                ^~~
